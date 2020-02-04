@@ -35,7 +35,7 @@ public class MilesPerHour
 
 	public void calcMPH()
 	{
-		mph=distance/(hours+(int.toDouble(minutes)/60.000));
+		mph=distance/(hours+(double)minutes/60.0);
 	}
 
 	public void print()
