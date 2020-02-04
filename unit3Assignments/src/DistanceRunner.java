@@ -32,12 +32,5 @@ public class DistanceRunner
 		Distance test = new Distance(x1, y1, x2, y2);
 		test.calcDistance();
 		test.print();
-		int x = 5, y = 6;
-
-		int z = x + y;
-
-		double a = z;
-
-		System.out.print(a);
 	}
 }
