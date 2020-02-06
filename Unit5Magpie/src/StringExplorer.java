@@ -22,7 +22,11 @@ public class StringExplorer
 		
 		//  Try other methods here:
 		int pos = sample.indexOf("slow");
-		for(int i =0; i<sample.length()-3;i++) {if(sample.substring(i,i+3).toLowerCase().equals("the")) {System.out.println("the is found at position "+i);}}
+		for(int i =0; i<sample.length()-3;i++) {
+			if(sample.substring(i,i+3).toLowerCase().equals("the")) {
+				System.out.println("the is found at position "+i);
+				}
+			}
 		if(pos >= 0) {
 		System.out.println("slow is found at position " + pos);
 		}
