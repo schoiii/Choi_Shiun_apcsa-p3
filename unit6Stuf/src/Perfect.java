@@ -20,7 +20,7 @@ public class Perfect
    }
 	//add a set method
 
-	public boolean isPerfect()
+	public String isPerfect()
 	{
 		int check=0;
 		for(int i=1; i<number; i++) {
@@ -29,9 +29,9 @@ public class Perfect
 			}
 		}
 		if(check==number) {
-			return true;
+			return number+" is perfect";
 		} else {
-			return false;
+			return number+" is not perfect";
 		}
 	}
 
