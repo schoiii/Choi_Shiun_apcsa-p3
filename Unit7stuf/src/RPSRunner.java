@@ -16,11 +16,34 @@ public class RPSRunner
 		
 			String player = "";
 		
-			out.print("type in your prompt [R,P,S] :: ");
-			
+			out.print("pick your weapon[R,P,S] :: ");
+			String input=keyboard.next();
+			System.out.print(input);
 			//read in the player value
 		
-			RockPaperScissors game = new RockPaperScissors();		
+			RockPaperScissors game = new RockPaperScissors(input);
+			System.out.println(game);
+			out.print("pick your weapon[R,P,S] :: ");
+			input=keyboard.next();
+			System.out.print(input);
+			game.setPlayers(input);
+			System.out.println(game);
+			out.print("pick your weapon[R,P,S] :: ");
+			input=keyboard.next();
+			System.out.print(input);
+			game.setPlayers(input);
+			System.out.println(game);
+			out.print("pick your weapon[R,P,S] :: ");
+			input=keyboard.next();
+			System.out.print(input);
+			game.setPlayers(input);
+			System.out.println(game);
+			out.print("pick your weapon[R,P,S] :: ");
+			input=keyboard.next();
+			System.out.print(input);
+			game.setPlayers(input);
+			System.out.println(game);
+			
 	}
 }
 
