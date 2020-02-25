@@ -20,7 +20,7 @@ public class TriangleFiveRunner
 	   n.setAmount(6);
 	   System.out.println(n);
 	   n.setLetter('Z');
-	   n.setAmount(8);
+	   n.setAmount(66);
 	   System.out.println(n);
 	}
 }
