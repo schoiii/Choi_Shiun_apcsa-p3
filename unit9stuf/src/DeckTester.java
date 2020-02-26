@@ -10,13 +10,18 @@ public class DeckTester {
 	public static void main(String[] args) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
 		
-		String[] rank = {"shiun", "ish", "steven"};
-		String[] suits = {"A", "B", "C"};
-		int[] stuf= {1,2,3};
+		String[] rank = {"jack", "queen", "king"};
+		String[] suits = {"blue", "red"};
+		int[] stuf= {11, 12, 13};
 		
 		
 		Deck deck1 = new Deck(rank, suits, stuf);
-		
+		System.out.println(deck1.deal());
+		System.out.println(deck1.deal());
+		System.out.println(deck1.deal());
+		System.out.println(deck1.deal());
+		System.out.println(deck1.deal());
+		System.out.println(deck1.deal());
 		
 	}
 }

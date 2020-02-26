@@ -31,14 +31,17 @@ public class Deck {
 	 */
 	public Deck(String[] ranks, String[] suits, int[] values) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+		Card[] newDeck=new Card[ranks.length*suits.length];
+		int k=0;
 		for(int i=0; i<ranks.length;i++) {
 			for(int j=0; j<suits.length; j++) {
 				Card card=new Card(ranks[i], suits[j], values[i]);
-				
-				
-				cards[k]=card;
+				newDeck[k]=card;
+				k++;
 			}
 		}
+		cards=newDeck.clone();
+		size=cards.length;
 	}
 
 
@@ -48,7 +51,7 @@ public class Deck {
 	 */
 	public boolean isEmpty() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
-		return true;
+		return size==0;
 	}
 
 	/**
@@ -57,7 +60,7 @@ public class Deck {
 	 */
 	public int size() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
-		return 0;
+		return size;
 	}
 
 	/**
@@ -73,16 +76,22 @@ public class Deck {
 	 * @return the card just dealt, or null if all the cards have been
 	 *         previously dealt.
 	 */
-	public void deal() {
+	public Card deal() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+		if(size==0) {
+			return null;
+		} else {
+			size--;
+			return cards[size];
+		}
 	}
 
 	/**
 	 * Generates and returns a string representation of this deck.
 	 * @return a string representation of this deck.
 	 */
-	@Override
-	public String toString() {
+	//@Override
+	/*public String toString() {
 		String rtn = "size = " + size + "\nUndealt cards: \n";
 
 		for (int k = size - 1; k >= 0; k--) {
@@ -111,4 +120,5 @@ public class Deck {
 		rtn = rtn + "\n";
 		return rtn;
 	}
+	*/
 }
