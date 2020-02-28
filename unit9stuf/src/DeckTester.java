@@ -22,6 +22,12 @@ public class DeckTester {
 		System.out.println(deck1.deal());
 		System.out.println(deck1.deal());
 		System.out.println(deck1.deal());
-		
+		deck1.shuffle();
+		System.out.println(deck1.deal());
+		System.out.println(deck1.deal());
+		System.out.println(deck1.deal());
+		System.out.println(deck1.deal());
+		System.out.println(deck1.deal());
+		System.out.println(deck1.deal());
 	}
 }

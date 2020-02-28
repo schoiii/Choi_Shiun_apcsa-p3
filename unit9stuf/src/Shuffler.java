@@ -1,6 +1,7 @@
 /**
  * This class provides a convenient way to test shuffling methods.
  */
+import static java.lang.Math.random;
 public class Shuffler {
 
 	/**
@@ -59,8 +60,20 @@ public class Shuffler {
 	 * the cards in one half with the cards in the other.
 	 * @param values is an array of integers simulating cards to be shuffled.
 	 */
-	public static void perfectShuffle(int[] values) {
+	public static int[] perfectShuffle(int[] cards) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 3 *** */
+		int[] shuffled= new int[cards.length];
+		int k=0;
+		for(int i=0; i<(cards.length/2); i++) {
+			shuffled[k]=cards[i];
+			k+=2;
+		}
+		k=1;
+		for(int i=cards.length/2; i<(cards.length); i++) {
+			shuffled[k]=cards[i];
+			k+=2;
+		}
+		return shuffled;
 	}
 
 	/**
@@ -74,7 +87,16 @@ public class Shuffler {
 	 * searching for an as-yet-unselected card.
 	 * @param values is an array of integers simulating cards to be shuffled.
 	 */
-	public static void selectionShuffle(int[] values) {
+	public static int[] selectionShuffle(int[] cards) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 3 *** */
+		for(int i=cards.length-1; i>-1; i--) {
+			int index=(int)(Math.random()*cards.length);
+			int one=cards[index];
+			int two=cards[i];
+			cards[i]=one;
+			cards[index]=two;
+			
+		}
+		return cards;
 	}
 }
