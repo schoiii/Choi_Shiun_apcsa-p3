@@ -1,8 +1,6 @@
 /**
  * This is a class that tests the Deck class using assert statements.
  */
-//Elevens activity 5
-//The isEmpty method is buggy. It could have an incorrect sign comparing the size of the deck and 0
 public class DeckTester {
 
 	/**
