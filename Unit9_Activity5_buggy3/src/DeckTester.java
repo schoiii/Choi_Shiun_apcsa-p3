@@ -1,6 +1,7 @@
 /**
  * This is a class that tests the Deck class using assert statements.
  */
+//The shuffle method is buggy. The random number generator could be implemented incorrectly
 public class DeckTester {
 
 	/**

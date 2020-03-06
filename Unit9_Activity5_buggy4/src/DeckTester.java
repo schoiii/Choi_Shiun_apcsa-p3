@@ -1,6 +1,7 @@
 /**
  * This is a class that tests the Deck class using assert statements.
  */
+//The deck constructor is buggy. It does not instantiate the deck with the assumed cards.
 public class DeckTester {
 
 	/**
