@@ -76,15 +76,17 @@ public class ToyStore
   	public void sortToysByCount()
   	{
   		for(int j=0; j<toyList.size(); j++)
-  		for(int i=0; i<toyList.size()-1; i++) {
+  		for(int i=0; i<toyList.size()-1; i++)
   			if(toyList.get(i).getCount()<toyList.get(i+1).getCount()) {	
   				Toy a = new Toy(toyList.get(i).getName());
+  				a.setCount(toyList.get(i).getCount());
   				Toy b= new Toy(toyList.get(i+1).getName());
+  				b.setCount(toyList.get(i+1).getCount());
   				toyList.set(i, b);
-  				toyList.set(i+1,  b);
-  			}
+  				toyList.set(i+1,  a);
   				
   		}
+  		System.out.println(toyList);
   	}  
   	  
 	public String toString()
