@@ -22,7 +22,7 @@ public class RationalRunner
 		out.println("test.equals(newOne) = "+test.equals(newOne));
 		
 		Rational rOne = new Rational(1,2);
-		Rational rTwo = new Rational(2,3);
+		Rational rTwo = new Rational(2,4);
 		out.println("1/2.equals(2/3) = "+rOne.equals(rTwo));
 		test.setRational(4,6);
 		out.println("2/3.equals(4/6) = "+rTwo.equals(test));
