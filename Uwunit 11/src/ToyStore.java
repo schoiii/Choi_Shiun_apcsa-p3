@@ -82,6 +82,7 @@ public class ToyStore
   				a.setCount(toyList.get(i).getCount());
   				Toy b= new Toy(toyList.get(i+1).getName());
   				b.setCount(toyList.get(i+1).getCount());
+  				
   				toyList.set(i, b);
   				toyList.set(i+1,  a);
   				
